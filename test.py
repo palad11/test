@@ -10,7 +10,6 @@ def calc(x):
 browser = webdriver.Chrome()
 link = "http://suninjuly.github.io/explicit_wait2.html"
 browser.get(link)
-
 WebDriverWait(browser, 12).until(EC.text_to_be_present_in_element((By.ID, 'price'),'10000 RUR'))
 button = browser.find_element_by_tag_name("button")
 button.click()
